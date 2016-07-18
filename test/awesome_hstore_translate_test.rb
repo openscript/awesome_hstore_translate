@@ -19,15 +19,15 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     end
   end
 
-  def test_retrieves_in_current_locale_with_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.default_locale = :'en-US'
-
-    p = Page.new(:title_raw => {'en' => 'English title'})
-    I18n.with_locale(:de) do
-      assert_equal('English title', p.title)
-    end
-  end
+  # def test_retrieves_in_current_locale_with_fallbacks
+  #   I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
+  #   I18n.default_locale = :'en-US'
+  #
+  #   p = Page.new(:title_raw => {'en' => 'English title'})
+  #   I18n.with_locale(:de) do
+  #     assert_equal('English title', p.title)
+  #   end
+  # end
 
   # def test_assigns_in_specified_locale
   #   I18n.with_locale(:en) do
