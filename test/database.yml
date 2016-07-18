@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  host: localhost
+  database: aht_test
+  username: aht
+  password: 123456
