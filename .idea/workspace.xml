@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d87146c8-1c8a-4106-ac55-0b57dd98d95e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/instance_methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/database.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/Page.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/awesome_hstore_translate.iml" afterPath="$PROJECT_DIR$/.idea/awesome_hstore_translate.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awesome_hstore_translate.gemspec" afterPath="$PROJECT_DIR$/awesome_hstore_translate.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/awesome_hstore_translate.rb" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/awesome_hstore_translate/version.rb" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" afterPath="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
     </list>
     <ignored path="awesome_hstore_translate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,16 +45,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="act_as_translatable.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -199,6 +181,7 @@
         <option value="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -690,8 +673,16 @@
       <updated>1468833931903</updated>
       <workItem from="1468833933805" duration="855000" />
       <workItem from="1468837342014" duration="3884000" />
-      <workItem from="1468866446619" duration="9476000" />
+      <workItem from="1468866446619" duration="9635000" />
     </task>
+    <task id="LOCAL-00001" summary="Add translate functionality">
+      <created>1468875945063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468875945063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -727,11 +718,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14215000" />
+    <option name="totallyTimeSpent" value="14374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1070" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -763,6 +754,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add translate functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add translate functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,6 +884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -922,6 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,6 +1094,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
