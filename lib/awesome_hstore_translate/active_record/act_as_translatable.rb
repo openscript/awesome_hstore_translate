@@ -15,6 +15,7 @@ module AwesomeHstoreTranslate
       protected
 
       def enable_attributes(attr_names)
+        extend Attributes
         attr_names.each do |attr_name|
           define_attributes(attr_name)
         end
