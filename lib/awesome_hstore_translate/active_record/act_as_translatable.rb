@@ -4,7 +4,7 @@ module AwesomeHstoreTranslate
       def translates(*attr_names)
         options = attr_names.extract_options!
 
-        bootstrap(options)
+        bootstrap(options, attr_names)
 
         enable_attributes(attr_names) if attr_names.present?
       end
@@ -20,12 +20,18 @@ module AwesomeHstoreTranslate
       def apply_options(options)
         options[:fallbacks] = true unless options.include?(:fallbacks)
 
-        class_attribute :options
-        self.options = options
+        class_attribute :translation_options
+        self.translation_options = options
       end
 
-      def bootstrap(options)
+      def expose_translated_attrs(attr_names)
+        class_attribute :translated_attribute_names
+        self.translated_attribute_names = attr_names
+      end
+
+      def bootstrap(options, attr_names)
         apply_options(options)
+        expose_translated_attrs(attr_names)
 
         include InstanceMethods
         extend ClassMethods

@@ -6,23 +6,23 @@ module AwesomeHstoreTranslate
       end
 
       def without_fallbacks(&block)
-        before_state = options[:fallbacks]
-        toggle_fallback if options[:fallbacks]
+        before_state = translation_options[:fallbacks]
+        toggle_fallback if translation_options[:fallbacks]
         yield block
-        options[:fallbacks] = before_state
+        translation_options[:fallbacks] = before_state
       end
 
       def with_fallbacks(&block)
-        before_state = options[:fallbacks]
-        toggle_fallback unless options[:fallbacks]
+        before_state = translation_options[:fallbacks]
+        toggle_fallback unless translation_options[:fallbacks]
         yield block
-        options[:fallbacks] = before_state
+        translation_options[:fallbacks] = before_state
       end
 
       protected
 
       def toggle_fallback
-        options[:fallbacks] = !options[:fallbacks]
+        translation_options[:fallbacks] = !translation_options[:fallbacks]
       end
 
       def define_attributes(attr)

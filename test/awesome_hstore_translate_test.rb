@@ -5,6 +5,11 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     refute_nil ::AwesomeHstoreTranslate::VERSION
   end
 
+  def test_translated_attributes
+    attr_names = PageWithFallbacks.translated_attribute_names
+    assert_equal([:title], attr_names)
+  end
+
   def test_assigns_in_current_locale
     I18n.with_locale(:en) do
       p = PageWithoutFallbacks.new(:title => 'English title')
