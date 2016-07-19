@@ -5,7 +5,25 @@ module AwesomeHstoreTranslate
         included_modules.include?(InstanceMethods)
       end
 
+      def without_fallbacks(&block)
+        before_state = options[:fallbacks]
+        toggle_fallback if options[:fallbacks]
+        yield block
+        options[:fallbacks] = before_state
+      end
+
+      def with_fallbacks(&block)
+        before_state = options[:fallbacks]
+        toggle_fallback unless options[:fallbacks]
+        yield block
+        options[:fallbacks] = before_state
+      end
+
       protected
+
+      def toggle_fallback
+        options[:fallbacks] = !options[:fallbacks]
+      end
 
       def define_attributes(attr)
         define_reader_attribute(attr)

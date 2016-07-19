@@ -7,31 +7,67 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
   def test_assigns_in_current_locale
     I18n.with_locale(:en) do
-      p = Page.new(:title => 'English title')
+      p = PageWithoutFallbacks.new(:title => 'English title')
       assert_equal('English title', p.title_raw['en'])
     end
   end
 
   def test_retrieves_in_current_locale
-    p = Page.new(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
+    p = PageWithoutFallbacks.new(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
     I18n.with_locale(:de) do
       assert_equal('Deutscher Titel', p.title)
     end
   end
 
-  # def test_retrieves_in_current_locale_with_fallbacks
-  #   I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-  #   I18n.default_locale = :'en-US'
-  #
-  #   p = Page.new(:title_raw => {'en' => 'English title'})
-  #   I18n.with_locale(:de) do
-  #     assert_equal('English title', p.title)
-  #   end
-  # end
+  def test_retrieves_in_current_locale_with_fallbacks
+    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
+    I18n.default_locale = :'en-US'
+
+    p = PageWithFallbacks.new(:title_raw => {'en' => 'English title'})
+    I18n.with_locale(:de) do
+      assert_equal('English title', p.title)
+    end
+  end
+
+  def test_retrieves_in_current_locale_without_fallbacks
+    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
+    I18n.default_locale = :'en'
+
+    p = PageWithoutFallbacks.new(:title_raw => {'en' => 'English title'})
+    I18n.with_locale(:de) do
+      assert_nil(p.title)
+    end
+  end
+
+
+  def test_retrieves_with_regional_enabled_fallbacks
+    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks.map(:en => :de)
+
+    p = PageWithoutFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
+    I18n.with_locale(:en) do
+      PageWithoutFallbacks.with_fallbacks do
+        assert_equal('Deutscher Titel', p.title)
+      end
+    end
+  end
+
+
+  def test_retrieves_with_regional_disabled_fallbacks
+    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks.map(:en => :de)
+
+    p = PageWithFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
+    I18n.with_locale(:en) do
+      PageWithFallbacks.without_fallbacks do
+        assert_nil(p.title)
+      end
+    end
+  end
 
   # def test_assigns_in_specified_locale
   #   I18n.with_locale(:en) do
-  #     p = Page.new(:raw => {'en' => 'English title'})
+  #     p = Page.new(:title_raw => {'en' => 'English title'})
   #     p.title_de = 'Deutscher Titel'
   #     assert_equal('Deutscher Titel', p.title_raw['de'])
   #   end
@@ -119,15 +155,15 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   # end
 
   def test_method_missing_delegates
-    assert_raises(NoMethodError) { Page.new.nonexistant_method }
+    assert_raises(NoMethodError) { PageWithoutFallbacks.new.nonexistant_method }
   end
 
   def test_method_missing_delegates_non_translated_attributes
-    assert_raises(NoMethodError) { Page.new.other_de }
+    assert_raises(NoMethodError) { PageWithoutFallbacks.new.other_de }
   end
 
   def test_persists_translations_assigned_as_hash
-    p = Page.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
+    p = PageWithoutFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
     p.reload
     assert_equal({'en' => 'English title', 'de' => 'Deutscher Titel'}, p.title_raw)
   end
@@ -146,6 +182,6 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   # end
 
   def test_class_method_translates?
-    assert_equal true, Page.translates?
+    assert_equal true, PageWithoutFallbacks.translates?
   end
 end

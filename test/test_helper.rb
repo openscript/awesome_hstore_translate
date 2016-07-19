@@ -3,7 +3,8 @@ require 'minitest/autorun'
 require 'database_cleaner'
 require 'awesome_hstore_translate'
 require 'yaml'
-require 'models/Page'
+require 'models/PageWithoutFallbacks'
+require 'models/PageWithFallbacks'
 
 DatabaseCleaner[:active_record].strategy = :transaction
 
@@ -49,7 +50,10 @@ class AwesomeHstoreTranslate::Test < MiniTest::Test
 
     def create_table
       connection = establish_connection(database_configuration)
-      connection.create_table(:pages, :force => true) do |t|
+      connection.create_table(:page_with_fallbacks, :force => true) do |t|
+        t.column :title, 'hstore'
+      end
+      connection.create_table(:page_without_fallbacks, :force => true) do |t|
         t.column :title, 'hstore'
       end
     end
