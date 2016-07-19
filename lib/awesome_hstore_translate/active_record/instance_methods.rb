@@ -1,14 +1,17 @@
 module AwesomeHstoreTranslate
   module ActiveRecord
     module InstanceMethods
+      protected
+
       def read_translated_attribute(attr, locale = I18n.locale)
         locales = []
         locales << locale
-        locales += get_fallback_for_locale(locale) if translation_options[:fallbacks]
+        locales += get_fallback_for_locale(locale) || [] if translation_options[:fallbacks]
+
         translations = read_attribute(attr)
 
         locales.uniq.each do |cur|
-          if translations.has_key?(cur.to_s)
+          if translations.has_key?(cur.to_s) && !translations[cur.to_s].empty?
             return translations[cur.to_s]
           end
         end
@@ -29,8 +32,6 @@ module AwesomeHstoreTranslate
       def write_raw_attribute(attr, value)
         write_attribute(attr, value)
       end
-
-      protected
 
       def get_fallback_for_locale(locale)
         I18n.fallbacks[locale] if I18n.respond_to?(:fallbacks)

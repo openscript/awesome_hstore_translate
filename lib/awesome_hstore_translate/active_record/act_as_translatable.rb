@@ -6,7 +6,10 @@ module AwesomeHstoreTranslate
 
         bootstrap(options, attr_names)
 
-        enable_attributes(attr_names) if attr_names.present?
+        if attr_names.present?
+          enable_attributes(attr_names)
+          enable_accessors(attr_names) if options[:accessors]
+        end
       end
 
       protected
@@ -17,8 +20,16 @@ module AwesomeHstoreTranslate
         end
       end
 
+      def enable_accessors(attr_names)
+        extend Accessors
+        attr_names.each do |attr_name|
+          define_accessors(attr_name)
+        end
+      end
+
       def apply_options(options)
         options[:fallbacks] = true unless options.include?(:fallbacks)
+        options[:accessors] = false unless options.include?(:accessors)
 
         class_attribute :translation_options
         self.translation_options = options

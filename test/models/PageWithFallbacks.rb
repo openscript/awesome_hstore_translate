@@ -1,5 +1,5 @@
 require 'active_record'
 
 class PageWithFallbacks < ActiveRecord::Base
-  translates :title
+  translates :title, accessors: [:en, :de]
 end
