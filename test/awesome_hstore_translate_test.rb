@@ -2,7 +2,7 @@ require 'test_helper'
 
 class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   def test_that_it_has_a_version_number
-    refute_nil ::AwesomeHstoreTranslate::VERSION
+    refute_nil AwesomeHstoreTranslate::VERSION
   end
 
   def test_translated_attributes
