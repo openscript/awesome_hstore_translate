@@ -124,13 +124,11 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
   def test_persists_translations_assigned_as_hash
     p = PageWithoutFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
-    p.reload
     assert_equal({'en' => 'English title', 'de' => 'Deutscher Titel'}, p.title_raw)
   end
 
   def test_persists_translations_assigned_to_localized_accessors
     p = PageWithFallbacks.create!(:title_en => 'English title', :title_de => 'Deutscher Titel')
-    p.reload
     assert_equal({'en' => 'English title', 'de' => 'Deutscher Titel'}, p.title_raw)
   end
 

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d87146c8-1c8a-4106-ac55-0b57dd98d95e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/attributes.rb" />
+    <list default="true" id="d87146c8-1c8a-4106-ac55-0b57dd98d95e" name="Default" comment="Add description to readme">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/awesome_hstore_translate.iml" afterPath="$PROJECT_DIR$/.idea/awesome_hstore_translate.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb" afterPath="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" afterPath="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" />
     </list>
     <ignored path="awesome_hstore_translate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,22 +28,22 @@
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_translated_attributes__awesome_hstore_translate.coverage" NAME="test_translated_attributes: awesome_hstore_translate Coverage Results" MODIFIED="1468950896170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_retrieves_in_current_locale_without_fallbacks__awesome_hstore_translate.coverage" NAME="test_retrieves_in_current_locale_without_fallbacks: awesome_hstore_translate Coverage Results" MODIFIED="1468915076313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@IRB_console__awesome_hstore_translate.coverage" NAME="IRB console: awesome_hstore_translate Coverage Results" MODIFIED="1468913567875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_that_it_has_a_version_number__awesome_hstore_translate.coverage" NAME="test_that_it_has_a_version_number: awesome_hstore_translate Coverage Results" MODIFIED="1468868065165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_that_it_has_a_version_number__awesome_hstore_translate.coverage" NAME="test_that_it_has_a_version_number: awesome_hstore_translate Coverage Results" MODIFIED="1468965778168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_method_missing_delegates__awesome_hstore_translate.coverage" NAME="test_method_missing_delegates: awesome_hstore_translate Coverage Results" MODIFIED="1468875304914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@All_tests_in_test__awesome_hstore_translate.coverage" NAME="All tests in test: awesome_hstore_translate Coverage Results" MODIFIED="1468868711953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_class_method_translates___awesome_hstore_translate.coverage" NAME="test_class_method_translates?: awesome_hstore_translate Coverage Results" MODIFIED="1468875688018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@Test.coverage" NAME="Test Coverage Results" MODIFIED="1468871379706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_retrieves_in_current_locale_with_fallbacks__awesome_hstore_translate.coverage" NAME="test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate Coverage Results" MODIFIED="1468913934440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_retrieves_in_current_locale_with_fallbacks__awesome_hstore_translate.coverage" NAME="test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate Coverage Results" MODIFIED="1468998639909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_retrieves_with_regional_enabled_fallbacks__awesome_hstore_translate.coverage" NAME="test_retrieves_with_regional_enabled_fallbacks: awesome_hstore_translate Coverage Results" MODIFIED="1468964345558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_assigns_in_specified_locale__awesome_hstore_translate.coverage" NAME="test_assigns_in_specified_locale: awesome_hstore_translate Coverage Results" MODIFIED="1468963879554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_fallback_from_empty_string__awesome_hstore_translate.coverage" NAME="test_fallback_from_empty_string: awesome_hstore_translate Coverage Results" MODIFIED="1468964649521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_persists_translations_assigned_as_hash__awesome_hstore_translate.coverage" NAME="test_persists_translations_assigned_as_hash: awesome_hstore_translate Coverage Results" MODIFIED="1468875349190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_persists_translations_assigned_as_hash__awesome_hstore_translate.coverage" NAME="test_persists_translations_assigned_as_hash: awesome_hstore_translate Coverage Results" MODIFIED="1468999785955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test__awesome_hstore_translate.coverage" NAME="test: awesome_hstore_translate Coverage Results" MODIFIED="1468868957882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_retrieves_with_regional_disabled_fallbacks__awesome_hstore_translate.coverage" NAME="test_retrieves_with_regional_disabled_fallbacks: awesome_hstore_translate Coverage Results" MODIFIED="1468963159790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
     <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_method_missing_delegates_non_translated_attributes__awesome_hstore_translate.coverage" NAME="test_method_missing_delegates_non_translated_attributes: awesome_hstore_translate Coverage Results" MODIFIED="1468875312738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_assigns_in_current_locale__awesome_hstore_translate.coverage" NAME="test_assigns_in_current_locale: awesome_hstore_translate Coverage Results" MODIFIED="1468911628335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_persists_translations_assigned_to_localized_accessors__awesome_hstore_translate.coverage" NAME="test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate Coverage Results" MODIFIED="1468964736358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
-    <SUITE FILE_PATH="coverage/awesome_hstore_translate@Run_test__awesome_hstore_translate_test___awesome_hstore_translate.coverage" NAME="Run test 'awesome_hstore_translate_test': awesome_hstore_translate Coverage Results" MODIFIED="1468965551946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_assigns_in_current_locale__awesome_hstore_translate.coverage" NAME="test_assigns_in_current_locale: awesome_hstore_translate Coverage Results" MODIFIED="1468965846873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@Run_test__awesome_hstore_translate_test___awesome_hstore_translate.coverage" NAME="Run test 'awesome_hstore_translate_test': awesome_hstore_translate Coverage Results" MODIFIED="1468998576115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
+    <SUITE FILE_PATH="coverage/awesome_hstore_translate@test_persists_translations_assigned_to_localized_accessors__awesome_hstore_translate.coverage" NAME="test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate Coverage Results" MODIFIED="1468999776445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="awesome_hstore_translate" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -66,8 +64,28 @@
       <file leaf-file-name="class_methods.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="216">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageWithFallbacks.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/PageWithFallbacks.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -93,37 +111,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageWithFallbacks.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/models/PageWithFallbacks.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="act_as_translatable.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accessors.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/accessors.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="active_record.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="active_record.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -133,22 +131,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instance_methods.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/instance_methods.rb">
+      <file leaf-file-name="awesome_hstore_translate_test.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/awesome_hstore_translate_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="486">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="56" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="awesome_hstore_translate_test.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/awesome_hstore_translate_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="738">
+                <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+                <folding>
+                  <marker date="1469000290958" expanded="true" signature="943:998" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1085:1256" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1124:1252" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1149:1246" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1252:1256" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1438:1440" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1438:1473" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="1821:1893" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2132:2169" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2392:2490" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2433:2486" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2487:2490" ph="do ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2496:3075" ph="##..." />
+                  <marker date="1469000290958" expanded="true" signature="2591:2669" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="2767:2857" ph=" ... end" />
+                  <marker date="1469000290958" expanded="true" signature="3217:4048" ph="for ... end" />
+                  <marker date="1469000290958" expanded="true" signature="3494:4048" ph="for ... end" />
+                  <marker date="1469000290958" expanded="true" signature="3787:4048" ph="for ... end" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,8 +176,8 @@
       <file leaf-file-name="awesome_hstore_translate.gemspec" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awesome_hstore_translate.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state relative-caret-position="216">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="169" />
               <folding />
             </state>
           </provider>
@@ -187,7 +207,6 @@
         <option value="$PROJECT_DIR$/test/database.yml" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate.rb" />
         <option value="dbtable:/89a36e03/384b2199-524a-4bd5-8b54-41d20e0c422c/aht_test.public.pages" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/models/Page.rb" />
         <option value="$PROJECT_DIR$/test/test_helper.rb" />
@@ -195,12 +214,13 @@
         <option value="$PROJECT_DIR$/test/models/PageWithFallbacks.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/accessors.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/instance_methods.rb" />
-        <option value="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/attributes.rb" />
         <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb" />
-        <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb" />
         <option value="$PROJECT_DIR$/awesome_hstore_translate.gemspec" />
+        <option value="$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb" />
+        <option value="$PROJECT_DIR$/test/awesome_hstore_translate_test.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -212,8 +232,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="1070" />
+    <option name="width" value="2560" />
+    <option name="height" value="1310" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,8 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,6 +366,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +381,7 @@
       <recent name="$PROJECT_DIR$/lib/awesome_hstore_translate" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'awesome_hstore_translate_test': awesome_hstore_translate">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_as_hash: awesome_hstore_translate">
     <configuration default="false" name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="awesome_hstore_translate" />
@@ -391,7 +411,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="false" name="test_retrieves_in_specified_locale_with_fallbacks: awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_assigns_in_current_locale: awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="awesome_hstore_translate" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -412,7 +432,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/awesome_hstore_translate_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_retrieves_in_specified_locale_with_fallbacks" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_assigns_in_current_locale" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -420,7 +440,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="false" name="test_fallback_from_empty_string: awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="awesome_hstore_translate" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -441,7 +461,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/awesome_hstore_translate_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_fallback_from_empty_string" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_retrieves_in_current_locale_with_fallbacks" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -478,14 +498,17 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="false" name="awesome_hstore_translate" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="test_persists_translations_assigned_as_hash: awesome_hstore_translate" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="awesome_hstore_translate" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
@@ -493,8 +516,15 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/awesome_hstore_translate.gemspec" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/awesome_hstore_translate_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_persists_translations_assigned_as_hash" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
@@ -672,18 +702,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'awesome_hstore_translate_test': awesome_hstore_translate" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_retrieves_in_specified_locale_with_fallbacks: awesome_hstore_translate" />
-      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_fallback_from_empty_string: awesome_hstore_translate" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_assigns_in_current_locale: awesome_hstore_translate" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate" />
       <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.awesome_hstore_translate" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_as_hash: awesome_hstore_translate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'awesome_hstore_translate_test': awesome_hstore_translate" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.awesome_hstore_translate" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate" />
-        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_fallback_from_empty_string: awesome_hstore_translate" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_retrieves_in_specified_locale_with_fallbacks: awesome_hstore_translate" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_as_hash: awesome_hstore_translate" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate" />
+        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'awesome_hstore_translate_test': awesome_hstore_translate" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_assigns_in_current_locale: awesome_hstore_translate" />
       </list>
     </recent_temporary>
   </component>
@@ -706,7 +736,8 @@
       <workItem from="1468908273393" duration="1173000" />
       <workItem from="1468910678781" duration="5403000" />
       <workItem from="1468942672507" duration="1296000" />
-      <workItem from="1468950702401" duration="6076000" />
+      <workItem from="1468950702401" duration="8183000" />
+      <workItem from="1468998257447" duration="2033000" />
     </task>
     <task id="LOCAL-00001" summary="Add translate functionality">
       <created>1468875945063</created>
@@ -757,63 +788,92 @@
       <option name="project" value="LOCAL" />
       <updated>1468965541853</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor attributes">
+      <created>1468965571552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1468965571552</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add test coverage gem">
+      <created>1468965948109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1468965948109</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add description to readme">
+      <created>1468966087745</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1468966087745</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Enable fallbacks from i18n module">
+      <created>1468998749547</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1468998749547</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.19 at 23h 39m 46s.xml">
+    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.20 at 00h 03m 22s.xml">
       <configuration name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.19 at 23h 44m 16s.xml">
+    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.20 at 09h 07m 55s.xml">
       <configuration name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.19 at 23h 46m 01s.xml">
+    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.20 at 09h 09m 37s.xml">
       <configuration name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.19 at 23h 50m 30s.xml">
-      <configuration name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Run_test_'awesome_hstore_translate_test'__awesome_hstore_translate - 2016.07.19 at 23h 59m 13s.xml">
-      <configuration name="Run test 'awesome_hstore_translate_test': awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_fallback_from_empty_string__awesome_hstore_translate - 2016.07.19 at 23h 41m 23s.xml">
-      <configuration name="test_fallback_from_empty_string: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_assigns_in_current_locale__awesome_hstore_translate - 2016.07.20 at 00h 04m 07s.xml">
+      <configuration name="test_assigns_in_current_locale: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="test_fallback_from_empty_string__awesome_hstore_translate - 2016.07.19 at 23h 44m 10s.xml">
       <configuration name="test_fallback_from_empty_string: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_persists_translations_assigned_as_hash__awesome_hstore_translate - 2016.07.20 at 09h 29m 46s.xml">
+      <configuration name="test_persists_translations_assigned_as_hash: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
     <history-entry file="test_persists_translations_assigned_to_localized_accessors__awesome_hstore_translate - 2016.07.19 at 23h 45m 37s.xml">
       <configuration name="test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_retrieves_in_specified_locale__awesome_hstore_translate - 2016.07.19 at 23h 40m 46s.xml">
-      <configuration name="test_retrieves_in_specified_locale: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_persists_translations_assigned_to_localized_accessors__awesome_hstore_translate - 2016.07.20 at 09h 29m 38s.xml">
+      <configuration name="test_persists_translations_assigned_to_localized_accessors: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_retrieves_in_specified_locale_with_fallbacks__awesome_hstore_translate - 2016.07.19 at 23h 41m 04s.xml">
-      <configuration name="test_retrieves_in_specified_locale_with_fallbacks: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_retrieves_in_current_locale_with_fallbacks__awesome_hstore_translate - 2016.07.20 at 09h 11m 47s.xml">
+      <configuration name="test_retrieves_in_current_locale_with_fallbacks: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_that_it_has_a_version_number__awesome_hstore_translate - 2016.07.20 at 00h 02m 59s.xml">
+      <configuration name="test_that_it_has_a_version_number: awesome_hstore_translate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29227000" />
+    <option name="totallyTimeSpent" value="33367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1070" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="2560" height="1310" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21671991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12509929" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23721881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36124796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.087027915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31186095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31116584" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -838,11 +898,15 @@
     <MESSAGE value="Add translated attributes getter" />
     <MESSAGE value="Add accessors functionality" />
     <MESSAGE value="Improve gemspec" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve gemspec" />
+    <MESSAGE value="Refactor attributes" />
+    <MESSAGE value="Add test coverage gem" />
+    <MESSAGE value="Add description to readme" />
+    <MESSAGE value="Enable fallbacks from i18n module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable fallbacks from i18n module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -866,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,16 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1100,13 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1118,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4338">
           <caret line="241" column="31" selection-start-line="241" selection-start-column="31" selection-end-line="241" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,15 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/PageWithFallbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="293" column="0" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,26 +1222,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/awesome_hstore_translate_test.rb">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awesome_hstore_translate.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1228,17 +1240,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/class_methods.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="216">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record.rb">
+    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome_hstore_translate.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="169" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/PageWithFallbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/awesome_hstore_translate/active_record/act_as_translatable.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/awesome_hstore_translate_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="738">
+            <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            <folding>
+              <marker date="1469000290958" expanded="true" signature="943:998" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="1085:1256" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="1124:1252" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="1149:1246" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="1252:1256" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="1438:1440" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="1438:1473" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="1821:1893" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="2132:2169" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="2392:2490" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="2433:2486" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="2487:2490" ph="do ... end" />
+              <marker date="1469000290958" expanded="true" signature="2496:3075" ph="##..." />
+              <marker date="1469000290958" expanded="true" signature="2591:2669" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="2767:2857" ph=" ... end" />
+              <marker date="1469000290958" expanded="true" signature="3217:4048" ph="for ... end" />
+              <marker date="1469000290958" expanded="true" signature="3494:4048" ph="for ... end" />
+              <marker date="1469000290958" expanded="true" signature="3787:4048" ph="for ... end" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
