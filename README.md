@@ -11,11 +11,13 @@ This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate m
  - [x] Attributes override / Raw attributes
  - [x] Fallbacks
  - [x] Language specific accessors
+ - [ ] Support drop in replace for [hstore_translate](https://github.com/Leadformance/hstore_translate)
  - [ ] Support instance selection (e. g. `where`, `find_by`)
  - [ ] Support `friendly_id`
 
 ## Requirements
  - ActiveRecord `>= 5`
+   - Please use [hstore_translate](https://github.com/Leadformance/hstore_translate), if you are on an older version.
  - I18n
 
 ## Installation
