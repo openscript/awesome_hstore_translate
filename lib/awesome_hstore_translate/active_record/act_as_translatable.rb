@@ -29,7 +29,8 @@ module AwesomeHstoreTranslate
       end
 
       def apply_options(options)
-        options[:fallbacks] = true unless options.include?(:fallbacks)
+        fallbacks = I18n.respond_to?(:fallbacks) ? I18n.fallbacks : true
+        options[:fallbacks] = fallbacks unless options.include?(:fallbacks)
         options[:accessors] = false unless options.include?(:accessors)
 
         class_attribute :translation_options
