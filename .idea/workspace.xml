@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d87146c8-1c8a-4106-ac55-0b57dd98d95e" name="Default" comment="Remove ignored files">
+    <list default="true" id="d87146c8-1c8a-4106-ac55-0b57dd98d95e" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="awesome_hstore_translate.iws" />
@@ -516,7 +516,7 @@
       <workItem from="1468910678781" duration="5403000" />
       <workItem from="1468942672507" duration="1296000" />
       <workItem from="1468950702401" duration="8183000" />
-      <workItem from="1468998257447" duration="3929000" />
+      <workItem from="1468998257447" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="Add translate functionality">
       <created>1468875945063</created>
@@ -616,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1469004200804</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Remove workspace.xml">
+      <created>1469004601189</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1469004601189</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -652,7 +659,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35263000" />
+    <option name="totallyTimeSpent" value="35281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="2560" height="1310" extended-state="6" />
@@ -704,7 +711,8 @@
     <MESSAGE value="Enable fallbacks from i18n module" />
     <MESSAGE value="Add usage description" />
     <MESSAGE value="Remove ignored files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove ignored files" />
+    <MESSAGE value="Remove workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
