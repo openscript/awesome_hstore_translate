@@ -2,7 +2,7 @@
 [![Gem Version](https://badge.fury.io/rb/awesome_hstore_translate.svg)](https://badge.fury.io/rb/awesome_hstore_translate)
 
 This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate model data. It is based on the gem
-[hstore_translate](https://github.com/Leadformance/hstore_translate) by Rob Worely.
+[`hstore_translate`](https://github.com/Leadformance/hstore_translate) by Rob Worely.
 
  - It's ready for Rails 5
  - No extra columns or tables needed to operate
@@ -10,16 +10,17 @@ This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate m
  - Everything is well tested
 
 ## Features
- - [x] Attributes override / Raw attributes
- - [x] Fallbacks
- - [x] Language specific accessors
- - [ ] Support drop in replace for [hstore_translate](https://github.com/Leadformance/hstore_translate)
- - [ ] Support instance selection (e. g. `where`, `find_by`)
- - [ ] Support `friendly_id`
+ - [x] `v0.1.0` Attributes override / Raw attributes
+ - [x] `v0.1.0` Fallbacks
+ - [x] `v0.1.0` Language specific accessors
+ - [x] `v0.2.0` Awesome Hstore Translate as drop in replace for [`hstore_translate`](https://github.com/Leadformance/hstore_translate)
+   - `with_[attr]_translation(str)` is not supported
+ - [ ] `v0.2.0` Support `friendly_id` (see `friendly_id-awesome_hstore` gem)
+ - [ ] `v0.3.0` Support record selection via ActiveRecord (e. g. `where`, `find_by`)
 
 ## Requirements
  - ActiveRecord `>= 5`
-   - Please use [hstore_translate](https://github.com/Leadformance/hstore_translate), if you are on an older version.
+   - Please use [`hstore_translate`](https://github.com/Leadformance/hstore_translate), if you are on an older version.
  - I18n
 
 ## Installation
@@ -132,6 +133,11 @@ p = Page.create!(:title_en => 'English title', :title_de => 'Deutscher Titel')
 p.title_en # => English title
 p.title_de # => Deutscher Titel
 ```
+
+### Upgrade from [`hstore_translate`](https://github.com/Leadformance/hstore_translate)
+1. Replace the [`hstore_translate`](https://github.com/Leadformance/hstore_translate) with `awesome_hstore_translate` in your Gemfile
+1. Activate accessors, if you used the [`hstore_translate`](https://github.com/Leadformance/hstore_translate) accessors
+1. Replace `with_[attr]_translation(str)` with equivalents (see "Support record selection via ActiveRecord" feature)
 
 ## Development
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
