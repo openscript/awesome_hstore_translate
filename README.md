@@ -83,7 +83,7 @@ p.title_raw # => {'en' => 'English title', 'de' => 'Deutscher Titel'}
 
 
 ### Fallbacks
-To enable fallbacks you can set `I18n.fallbacks` to `true` or enable it manually in the model:
+It's possible to fall back to another language, if there is no or an empty value for the primary language. To enable fallbacks you can set `I18n.fallbacks` to `true` or enable it manually in the model:
 ```ruby
 class Page < ActiveRecord::Base
   translates :title, :content, fallbacks: true
