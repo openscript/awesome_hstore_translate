@@ -158,4 +158,9 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     res = PageWithFallbacks.find_by(title: 'Another English title')
     assert_equal(exp.id, res.id)
   end
+
+  def test_with_empty_translated_value
+    new = PageWithFallbacks.new
+    assert_nil(new.title)
+  end
 end

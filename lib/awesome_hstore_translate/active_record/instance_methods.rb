@@ -10,9 +10,11 @@ module AwesomeHstoreTranslate
 
         translations = read_raw_attribute(attr)
 
-        locales.uniq.each do |cur|
-          if translations.has_key?(cur.to_s) && !translations[cur.to_s].empty?
-            return translations[cur.to_s]
+        if translations
+          locales.uniq.each do |cur|
+            if translations.has_key?(cur.to_s) && !translations[cur.to_s].empty?
+              return translations[cur.to_s]
+            end
           end
         end
 
