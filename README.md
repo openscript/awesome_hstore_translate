@@ -17,7 +17,7 @@ This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate m
    - `with_[attr]_translation(str)` is not supported
  - [x] `v0.2.0` Support record selection via ActiveRecord (e. g. `where`, `find_by`)
    - maybe it's a bad idea to implement this
- - [ ] `v0.3.0` Support `friendly_id` (see `friendly_id-awesome_hstore` gem)
+ - [ ] `backlog` Support `friendly_id` (see `friendly_id-awesome_hstore` gem)
 
 ## Requirements
  - ActiveRecord `>= 5`
@@ -134,6 +134,16 @@ p = Page.create!(:title_en => 'English title', :title_de => 'Deutscher Titel')
 p.title_en # => English title
 p.title_de # => Deutscher Titel
 ```
+
+### Find
+`awesome_hstore_translate` patches ActiveRecord, so you can conviniently use `where` and `find_by` as you like.
+```ruby
+Page.create!(:title_en => 'English title', :title_de => 'Deutscher Titel')
+Page.create!(:title_en => 'Another English title', :title_de => 'Noch ein Deutscher Titel')
+
+Page.where(title: 'Another English title')  # => Page
+```
+
 
 ### Upgrade from [`hstore_translate`](https://github.com/Leadformance/hstore_translate)
 1. Replace the [`hstore_translate`](https://github.com/Leadformance/hstore_translate) with `awesome_hstore_translate` in your Gemfile
