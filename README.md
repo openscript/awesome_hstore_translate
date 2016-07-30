@@ -15,8 +15,9 @@ This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate m
  - [x] `v0.1.0` Language specific accessors
  - [x] `v0.2.0` Awesome Hstore Translate as drop in replace for [`hstore_translate`](https://github.com/Leadformance/hstore_translate)
    - `with_[attr]_translation(str)` is not supported
- - [ ] `v0.2.0` Support `friendly_id` (see `friendly_id-awesome_hstore` gem)
- - [ ] `v0.3.0` Support record selection via ActiveRecord (e. g. `where`, `find_by`)
+ - [x] `v0.2.0` Support record selection via ActiveRecord (e. g. `where`, `find_by`)
+   - maybe it's a bad idea to implement this
+ - [ ] `v0.3.0` Support `friendly_id` (see `friendly_id-awesome_hstore` gem)
 
 ## Requirements
  - ActiveRecord `>= 5`

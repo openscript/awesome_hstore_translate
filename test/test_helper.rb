@@ -52,9 +52,11 @@ class AwesomeHstoreTranslate::Test < MiniTest::Test
       connection = establish_connection(database_configuration)
       connection.create_table(:page_with_fallbacks, :force => true) do |t|
         t.column :title, 'hstore'
+        t.column :author, :string
       end
       connection.create_table(:page_without_fallbacks, :force => true) do |t|
         t.column :title, 'hstore'
+        t.column :author, :string
       end
     end
   end

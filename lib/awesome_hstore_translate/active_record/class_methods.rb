@@ -24,6 +24,13 @@ module AwesomeHstoreTranslate
       def toggle_fallback
         translation_options[:fallbacks] = !translation_options[:fallbacks]
       end
+
+      private
+
+      # Override the default relation methods in order to inject custom finder methods for hstore translations.
+      def relation
+        super.extending!(QueryMethods)
+      end
     end
   end
 end

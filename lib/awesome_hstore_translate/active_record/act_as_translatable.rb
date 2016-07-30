@@ -47,6 +47,7 @@ module AwesomeHstoreTranslate
         expose_translated_attrs(attr_names)
 
         include InstanceMethods
+        extend Core::ClassMethods
         extend ClassMethods
       end
     end
