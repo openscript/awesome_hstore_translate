@@ -152,6 +152,15 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     assert_equal(exp.id, res.id)
   end
 
+  def test_fix_for_error_from_awesome_nested_table
+    PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'},
+                              author: 'Awesome')
+    exp = PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'},
+                              author: nil)
+    res = PageWithFallbacks.where(PageWithFallbacks.arel_table[:author].eq(nil)).first
+    assert_equal(exp.id, res.id)
+  end
+
   def test_find_by_query_with_translated_value
     PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
     exp = PageWithFallbacks.create!(:title_raw => {'en' => 'Another English title', 'de' => 'Noch ein Deutscher Titel'})
