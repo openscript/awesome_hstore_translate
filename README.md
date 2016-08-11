@@ -49,6 +49,9 @@ Make sure that the datatype of this columns is `hstore`:
 ```ruby
 class CreatePages < ActiveRecord::Migration
   def change
+    # Make sure you enable the hstore extenion
+    enable_extension 'hstore' unless extension_enabled?('hstore')
+    
     create_table :pages do |t|
       t.column :title, :hstore
       t.column :content, :hstore
