@@ -6,7 +6,7 @@ module AwesomeHstoreTranslate
           translated_attrs = translated_attributes(opts)
           normal_attrs = opts.reject{ |key, _| translated_attrs.include? key}
           query = spawn
-          query.where!(normal_attrs) unless normal_attrs.empty?
+          query.where!(normal_attrs, *rest) unless normal_attrs.empty?
 
           translated_attrs.each do |attribute|
             if opts[attribute].is_a?(String)
