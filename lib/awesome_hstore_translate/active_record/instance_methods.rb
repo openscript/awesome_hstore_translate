@@ -4,16 +4,15 @@ module AwesomeHstoreTranslate
       protected
 
       def read_translated_attribute(attr, locale = I18n.locale)
-        locales = []
-        locales << locale
+        locales = Array(locale)
         locales += get_fallback_for_locale(locale) || [] if translation_options[:fallbacks]
 
         translations = read_raw_attribute(attr)
 
         if translations
-          locales.uniq.each do |cur|
-            if translations.has_key?(cur.to_s) && !translations[cur.to_s].empty?
-              return translations[cur.to_s]
+          locales.map(&:to_s).uniq.each do |cur|
+            if translations.has_key?(cur) && !translations[cur].blank?
+              return translations[cur]
             end
           end
         end
