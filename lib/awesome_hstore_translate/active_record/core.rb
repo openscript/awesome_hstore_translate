@@ -7,7 +7,7 @@ module AwesomeHstoreTranslate
           if attrs.is_a?(Hash) && contains_translated_attributes(attrs)
             where(attrs).limit(1).first
           else
-            super(args)
+            super
           end
         end
 
