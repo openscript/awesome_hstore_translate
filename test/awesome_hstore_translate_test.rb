@@ -168,6 +168,26 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     assert_equal(exp.id, res.id)
   end
 
+  def test_first_or_create_on_where
+    exp = 'Titre français'
+    res = PageWithFallbacks.where(title: exp).first_or_create!
+    refute_empty(res.id.to_s)
+    # this shouldn't be nil
+    assert_equal(nil, res.title)
+
+    exp = 'Titre français'
+    res = PageWithFallbacks.where(title: exp).first_or_create!(title: exp)
+    refute_empty(res.id.to_s)
+    assert_equal(exp, res.title)
+  end
+
+  def test_find_or_create_by
+    exp = 'Titre français'
+    res = PageWithFallbacks.find_or_create_by(title: exp)
+    refute_empty(res.id.to_s)
+    assert_equal(exp, res.title)
+  end
+
   def test_with_empty_translated_value
     new = PageWithFallbacks.new
     assert_nil(new.title)

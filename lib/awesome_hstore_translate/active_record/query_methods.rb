@@ -10,7 +10,7 @@ module AwesomeHstoreTranslate
 
           translated_attrs.each do |attribute|
             if opts[attribute].is_a?(String)
-              query.where!("'#{opts[attribute]}' = any(avals(#{attribute}))")
+              query.where!(":key = any(avals(#{attribute}))", key: opts[attribute])
             else
               super
             end
