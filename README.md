@@ -146,6 +146,21 @@ Page.create!(:title_en => 'Another English title', :title_de => 'Noch ein Deutsc
 Page.where(title: 'Another English title')  # => Page
 ```
 
+### Limitations
+`awesome_hstore_translate` patches ActiveRecord, which create the limitation, that a with `where` chained `first_or_create` and `first_or_create!` **doesn't work** as expected.
+Here is an example, which **won't** work:
+
+``` ruby
+Page.where(title: 'Titre français').first_or_create!
+```
+
+A workaround is:
+
+``` ruby
+Page.where(title: 'Titre français').first_or_create!(title: 'Titre français')
+```
+
+The where clause is internally rewritten to `WHERE 'Titre français' = any(avals(title))`, so the `title: 'Titre français'` is not bound to the scope.
 
 ### Upgrade from [`hstore_translate`](https://github.com/Leadformance/hstore_translate)
 1. Replace the [`hstore_translate`](https://github.com/Leadformance/hstore_translate) with `awesome_hstore_translate` in your Gemfile
