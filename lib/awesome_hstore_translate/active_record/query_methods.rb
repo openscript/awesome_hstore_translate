@@ -18,6 +18,28 @@ module AwesomeHstoreTranslate
               super
             end
           end
+
+          query
+        else
+          super
+        end
+      end
+
+      def order(*args)
+        if args.is_a?(Array)
+          check_if_method_has_arguments!(:order, args)
+          query = spawn
+          translated_attrs = translated_attributes(args[0])
+          untranslated_attrs = untranslated_attributes(args[0])
+
+          unless untranslated_attrs.empty?
+            query.order!(untranslated_attrs)
+          end
+
+          translated_attrs.each do |key, value|
+            query.order!("#{key} -> '#{I18n.locale.to_s}' #{value}")
+          end
+
           query
         else
           super
@@ -27,12 +49,11 @@ module AwesomeHstoreTranslate
       private
 
       def translated_attributes(opts)
-        self.translated_attribute_names & opts.keys
-        opts.select{ |key, _| self.translated_attribute_names.include? key }
+        opts.select{ |key, _| self.translated_attribute_names.include?(key) }
       end
 
       def untranslated_attributes(opts)
-        opts.reject{ |key, _| self.translated_attribute_names.include? key }
+        opts.reject{ |key, _| self.translated_attribute_names.include?(key) }
       end
     end
   end

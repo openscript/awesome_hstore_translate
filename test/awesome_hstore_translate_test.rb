@@ -192,4 +192,32 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     new = PageWithFallbacks.new
     assert_nil(new.title)
   end
+
+  def test_order_by
+    PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'}, author: 'First')
+    PageWithFallbacks.create!(:title_raw => {'en' => 'Another English title', 'de' => 'Noch ein Deutscher Titel'}, author: 'Second')
+    PageWithFallbacks.create!(:title_raw => {'en' => 'Yet another English title', 'de' => 'Letzer Deutscher Titel'}, author: 'Third')
+
+    res = PageWithFallbacks.all.order(title: :desc)
+    assert_equal('Yet another English title', res.first.title)
+
+    res = PageWithFallbacks.all.order(title: :asc)
+    assert_equal('Another English title', res.first.title)
+
+    I18n.with_locale(:de) do
+      res = PageWithFallbacks.all.order(title: :desc)
+      assert_equal('Noch ein Deutscher Titel', res.first.title)
+    end
+
+    I18n.with_locale(:de) do
+      res = PageWithFallbacks.all.order(title: :asc)
+      assert_equal('Deutscher Titel', res.first.title)
+    end
+
+    res = PageWithFallbacks.all.order(author: :desc)
+    assert_equal('Third', res.first.author)
+
+    res = PageWithFallbacks.all.order(author: :asc)
+    assert_equal('First', res.first.author)
+  end
 end
