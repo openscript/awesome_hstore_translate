@@ -204,6 +204,9 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     res = PageWithFallbacks.all.order(title: :asc)
     assert_equal('Another English title', res.first.title)
 
+    res = PageWithFallbacks.all.order(:title)
+    assert_equal('Another English title', res.first.title)
+
     I18n.with_locale(:de) do
       res = PageWithFallbacks.all.order(title: :desc)
       assert_equal('Noch ein Deutscher Titel', res.first.title)

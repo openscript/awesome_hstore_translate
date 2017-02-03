@@ -29,8 +29,17 @@ module AwesomeHstoreTranslate
         if args.is_a?(Array)
           check_if_method_has_arguments!(:order, args)
           query = spawn
-          translated_attrs = translated_attributes(args[0])
-          untranslated_attrs = untranslated_attributes(args[0])
+          attrs = args
+
+          # TODO Remove this ugly hack
+          if args[0].is_a?(Hash)
+            attrs = args[0]
+          elsif args[0].is_a?(Symbol)
+            attrs = Hash[args.map {|attr| [attr, :asc]}]
+          end
+
+          translated_attrs = translated_attributes(attrs)
+          untranslated_attrs = untranslated_attributes(attrs)
 
           unless untranslated_attrs.empty?
             query.order!(untranslated_attrs)
