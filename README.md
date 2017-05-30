@@ -52,7 +52,7 @@ class CreatePages < ActiveRecord::Migration
   def change
     # Make sure you enable the hstore extenion
     enable_extension 'hstore' unless extension_enabled?('hstore')
-    
+
     create_table :pages do |t|
       t.column :title, :hstore
       t.column :content, :hstore
@@ -84,6 +84,10 @@ p = Page.new(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
 p.title_raw # => {'en' => 'English title', 'de' => 'Deutscher Titel'}
 ```
 
+Translated attributes:
+```ruby
+Page.translated_attribute_names # [:title]
+```
 
 ### Fallbacks
 It's possible to fall back to another language, if there is no or an empty value for the primary language. To enable fallbacks you can set `I18n.fallbacks` to `true` or enable it manually in the model:
@@ -138,6 +142,11 @@ p.title_en # => English title
 p.title_de # => Deutscher Titel
 ```
 
+Translated accessor attributes:
+```ruby
+Page.translated_accessor_names # [:title_en, :title_de]
+```
+
 ### Find
 `awesome_hstore_translate` patches ActiveRecord, so you can conviniently use `where` and `find_by` as you like.
 ```ruby
@@ -189,4 +198,3 @@ Bug reports and pull requests are welcome on [GitHub](https://github.com/openscr
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
