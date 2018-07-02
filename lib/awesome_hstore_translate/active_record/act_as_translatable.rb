@@ -40,6 +40,9 @@ module AwesomeHstoreTranslate
       def expose_translated_attrs(attr_names)
         class_attribute :translated_attribute_names
         self.translated_attribute_names = attr_names
+
+        class_attribute :translated_accessor_names
+        self.translated_accessor_names = []
       end
 
       def bootstrap(options, attr_names)

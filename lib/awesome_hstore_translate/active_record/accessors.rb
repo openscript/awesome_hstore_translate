@@ -7,6 +7,7 @@ module AwesomeHstoreTranslate
         translation_options[:accessors].each do |locale|
           define_reader_accessor(attr, locale)
           define_writer_accessor(attr, locale)
+          self.translated_accessor_names << :"#{attr}_#{locale}"
         end
       end
 

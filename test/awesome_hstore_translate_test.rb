@@ -10,6 +10,11 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     assert_equal([:title], attr_names)
   end
 
+  def test_translated_accessors
+    attr_names = PageWithFallbacks.translated_accessor_names
+    assert_equal([:title_en, :title_de], attr_names)
+  end
+  
   def test_assigns_in_current_locale
     I18n.with_locale(:en) do
       p = PageWithoutFallbacks.new(:title => 'English title')
