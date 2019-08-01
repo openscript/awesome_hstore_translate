@@ -19,6 +19,14 @@ module AwesomeHstoreTranslate
         translation_options[:fallbacks] = before_state
       end
 
+      def get_column_name(attr)
+        column_name = attr.to_s
+        # detect column from original hstore_translate
+        column_name << '_translations' if !has_attribute?(column_name) && has_attribute?("#{column_name}_translations")
+
+        column_name
+      end
+
       protected
 
       def toggle_fallback
