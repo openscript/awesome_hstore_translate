@@ -58,6 +58,8 @@ module AwesomeHstoreTranslate
       private
 
       def translated_attributes(opts)
+        return opts unless self.respond_to?(:translated_attribute_names)
+
         opts
           .select{ |key, _| self.translated_attribute_names.include?(key) }
           .map{ |key, value| [get_column_name(key), value] }
@@ -65,6 +67,8 @@ module AwesomeHstoreTranslate
       end
 
       def untranslated_attributes(opts)
+        return opts unless self.respond_to?(:translated_attribute_names)
+
         opts.reject{ |key, _| self.translated_attribute_names.include?(key) }
       end
     end
