@@ -140,4 +140,27 @@ class AwesomeHstoreTranslateLegacyTest < AwesomeHstoreTranslate::Test
   def test_class_method_translates?
     assert_equal true, PageWithoutFallbacks.translates?
   end
+
+  def test_where_query_with_translated_value
+    PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
+    exp = PageWithFallbacks.create!(:title_raw => {'en' => 'Another English title', 'de' => 'Noch ein Deutscher Titel'})
+    res = PageWithFallbacks.where(title: 'Another English title').first
+    assert_equal(exp.id, res.id)
+  end
+
+  def test_where_query_with_translated_value_and_other
+    PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'},
+                              author: 'Awesome')
+    exp = PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'},
+                              author: 'Spectacular')
+    res = PageWithFallbacks.where(title: 'English title', author: 'Spectacular').first
+    assert_equal(exp.id, res.id)
+  end
+
+  def test_find_by_query_with_translated_value
+    PageWithFallbacks.create!(:title_raw => {'en' => 'English title', 'de' => 'Deutscher Titel'})
+    exp = PageWithFallbacks.create!(:title_raw => {'en' => 'Another English title', 'de' => 'Noch ein Deutscher Titel'})
+    res = PageWithFallbacks.find_by(title: 'Another English title')
+    assert_equal(exp.id, res.id)
+  end
 end
