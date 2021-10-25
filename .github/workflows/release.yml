@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        if: ${{ steps.release.outputs.release_created }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0 # Not needed with a .ruby-version file
