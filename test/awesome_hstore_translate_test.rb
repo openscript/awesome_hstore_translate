@@ -30,8 +30,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   end
 
   def test_retrieves_in_current_locale_with_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.default_locale = :'en-US'
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks = [:'en-US']
 
     p = PageWithFallbacks.new(:title_raw => {'en' => 'English title'})
     I18n.with_locale(:de) do
@@ -40,8 +40,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   end
 
   def test_retrieves_in_current_locale_without_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.default_locale = :'en'
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks = [:'en']
 
     p = PageWithoutFallbacks.new(:title_raw => {'en' => 'English title'})
     I18n.with_locale(:de) do
@@ -51,8 +51,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
 
   def test_retrieves_with_regional_enabled_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.fallbacks.map(:en => :de)
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks[:en] = [:de]
 
     p = PageWithoutFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
     I18n.with_locale(:en) do
@@ -64,8 +64,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
 
   def test_retrieves_with_regional_disabled_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.fallbacks.map(:en => :de)
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks[:en] = [:de]
 
     p = PageWithFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
     I18n.with_locale(:en) do
@@ -100,8 +100,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   end
 
   def test_retrieves_in_specified_locale_with_fallbacks
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.default_locale = :'en-US'
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks = [:'en-US']
 
     p = PageWithFallbacks.new(:title_raw => {'en' => 'English title'})
     I18n.with_locale(:de) do
@@ -110,8 +110,8 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
   end
 
   def test_fallback_from_empty_string
-    I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
-    I18n.default_locale = :'en-US'
+    I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
+    I18n.fallbacks = [:'en-US']
 
     p = PageWithFallbacks.new(:title_raw => {'en' => 'English title', 'de' => ''})
     I18n.with_locale(:de) do
@@ -178,7 +178,7 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
     res = PageWithFallbacks.where(title: exp).first_or_create!
     refute_empty(res.id.to_s)
     # this shouldn't be nil
-    assert_equal(nil, res.title)
+    assert_nil(res.title)
 
     exp = 'Titre français'
     res = PageWithFallbacks.where(title: exp).first_or_create!(title: exp)

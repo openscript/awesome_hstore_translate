@@ -46,7 +46,7 @@ module AwesomeHstoreTranslate
           end
 
           translated_attrs.each do |key, value|
-            query.order!("#{key} -> '#{I18n.locale.to_s}' #{value}")
+            query.order!(Arel.sql("#{key} -> '#{I18n.locale.to_s}' #{value}"))
           end
 
           query
@@ -62,7 +62,15 @@ module AwesomeHstoreTranslate
       end
 
       def untranslated_attributes(opts)
+        return safe_untranslated_attributes(opts) if opts.is_a?(Array)
+
         opts.reject{ |key, _| self.translated_attribute_names.include?(key) }
+      end
+
+      def safe_untranslated_attributes(opts)
+        opts
+          .reject { |opt| opt.is_a?(Arel::Nodes::Ordering) }
+          .map! { |opt| Arel.sql(opt.to_s) }
       end
     end
   end

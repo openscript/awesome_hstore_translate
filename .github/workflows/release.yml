@@ -1,0 +1,39 @@
+name: Release to RubyGems
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        id: release
+        with:
+          release-type: ruby
+          package-name: awesome_hstore_translate
+          bump-minor-pre-major: true
+          version-file: "lib/awesome_hstore_translate/version.rb"
+      # Checkout code if release was created
+      - uses: actions/checkout@v2
+        if: ${{ steps.release.outputs.release_created }}
+      # Setup ruby if a release was created
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        if: ${{ steps.release.outputs.release_created }}
+      # Publish
+      - name: publish gem
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          gem build *.gemspec
+          gem push *.gem
+        env:
+          GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_TOKEN}}"
+        if: ${{ steps.release.outputs.release_created }}
