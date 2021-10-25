@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    awesome_hstore_translate (0.3.2)
+    awesome_hstore_translate (0.4.0)
       activemodel (>= 5.0)
       activerecord (>= 5.0)
 
