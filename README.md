@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/awesome_hstore_translate.svg)](https://badge.fury.io/rb/awesome_hstore_translate)
 
 This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate model data. It is based on the gem
-[`hstore_translate`](https://github.com/Leadformance/hstore_translate) by Rob Worely.
+[`hstore_translate`](https://github.com/Leadformance/hstore_translate) by Rob Worely. An alternative is [`json_translate`](https://github.com/cfabianski/json_translate).
 
 - Works with Rails 5 and 6
 - No extra columns or tables needed to operate
