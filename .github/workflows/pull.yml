@@ -6,13 +6,27 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0
           bundler-cache: true
-      - name: Install dependencies
-        run: bundle install
+      - name: Install PostgreSQL client
+        run: sudo apt-get -yqq install libpq-dev
       - name: Run tests
         run: bundle exec rake
