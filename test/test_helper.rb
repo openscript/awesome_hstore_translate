@@ -5,6 +5,7 @@ require 'awesome_hstore_translate'
 require 'yaml'
 require 'models/PageWithoutFallbacks'
 require 'models/PageWithFallbacks'
+require 'byebug'
 
 DatabaseCleaner[:active_record].strategy = :transaction
 

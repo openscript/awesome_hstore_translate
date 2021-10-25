@@ -46,7 +46,7 @@ module AwesomeHstoreTranslate
           end
 
           translated_attrs.each do |key, value|
-            query.order!("#{key} -> '#{I18n.locale.to_s}' #{value}")
+            query.order!(Arel.sql("#{key} -> '#{I18n.locale.to_s}' #{value}"))
           end
 
           query
