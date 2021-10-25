@@ -52,7 +52,7 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
   def test_retrieves_with_regional_enabled_fallbacks
     I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
-    I18n.fallbacks.map(:en => :de)
+    I18n.fallbacks[:en] = [:de]
 
     p = PageWithoutFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
     I18n.with_locale(:en) do
@@ -65,7 +65,7 @@ class AwesomeHstoreTranslateTest < AwesomeHstoreTranslate::Test
 
   def test_retrieves_with_regional_disabled_fallbacks
     I18n::Backend::KeyValue.include(I18n::Backend::Fallbacks)
-    I18n.fallbacks.map(:en => :de)
+    I18n.fallbacks[:en] = [:de]
 
     p = PageWithFallbacks.new(:title_raw => {'de' => 'Deutscher Titel'})
     I18n.with_locale(:en) do
