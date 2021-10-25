@@ -5,7 +5,7 @@
 This gem uses PostgreSQLs hstore datatype and ActiveRecord models to translate model data. It is based on the gem
 [`hstore_translate`](https://github.com/Leadformance/hstore_translate) by Rob Worely.
 
-- It's ready for Rails 5
+- Works with Rails 5 and 6
 - No extra columns or tables needed to operate
 - Clean naming in the database model
 - Everything is well tested
